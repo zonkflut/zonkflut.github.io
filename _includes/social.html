@@ -1,4 +1,9 @@
 <ul class="social-media-list">
+  {%- if site.email -%}<li><a title="email" href="mailto:{{ site.email| cgi_escape | escape }}">
+    <svg class="svg-icon" viewBox="0 0 44 44" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><!--<use xlink:href="{{ '/assets/minima-social-icons.svg#email' | relative_url }}"></use>-->
+      <path d="M43,6H1C0.447,6,0,6.447,0,7v30c0,0.553,0.447,1,1,1h42c0.552,0,1-0.447,1-1V7C44,6.447,43.552,6,43,6z M42,33.581     L29.612,21.194l-1.414,1.414L41.59,36H2.41l13.392-13.392l-1.414-1.414L2,33.581V8h40V33.581z"/>
+		  <path d="M39.979,8L22,25.979L4.021,8H2v0.807L21.293,28.1c0.391,0.391,1.023,0.391,1.414,0L42,8.807V8H39.979z"/>
+    </svg><!-- <span class="username">{{ site.email| escape }}</span>--></a></li>{%- endif -%}
   {%- if site.dribbble_username -%}<li><a title="dribble" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg><!-- <span class="username">{{ site.dribbble_username| escape }}</span>--></a></li>{%- endif -%}
   {%- if site.facebook_username -%}<li><a title= "facebook" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg><!-- <span class="username">{{ site.facebook_username| escape }}</span>--></a></li>{%- endif -%}
   {%- if site.flickr_username -%}<li><a title="flickr" href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#flickr' | relative_url }}"></use></svg><!-- <span class="username">{{ site.flickr_username| escape }}</span>--></a></li>{%- endif -%}

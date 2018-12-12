@@ -3,10 +3,10 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <!--<h2 class="footer-heading">{{ site.title | escape }}</h2>-->
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <!--<div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
@@ -19,7 +19,7 @@
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
-      </div>
+      </div>-->
 
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
@@ -27,11 +27,9 @@
 
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
-		<p class="disclaimer">Opinions are my own and not the views of my employer.</p>
-		<p class="copyright">&copy; {{ site.time | date: '%Y' }} Erik Nilsson</p>
+        <p class="disclaimer">Opinions are my own and not the views of my employer.</p>
+        <p class="copyright">&copy; {{ site.time | date: '%Y' }} Erik Nilsson</p>
       </div>
     </div>
-
   </div>
-
 </footer>

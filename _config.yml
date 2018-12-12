@@ -24,6 +24,13 @@ github_username:  zonkflut
 linkedin_username: zonkflut
 stackoverflow_username: zonkflut
 
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: zonkflut
+comments: true
+
 # Build settings
 markdown: kramdown
 theme: minima
